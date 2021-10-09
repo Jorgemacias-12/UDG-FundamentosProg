@@ -21,5 +21,3 @@ int main()
     getch();
     return 0;
 }
-// printf("El numero: %d es primo\n", inputNumber);
-// printf("El numero: %d no es primo\n", inputNumber);
