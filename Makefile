@@ -1,5 +1,8 @@
-all: highestNumber binary power triangle tenOddNumbers sphere prime infinitSum sum numbers
+all: makedir highestNumber binary power triangle tenOddNumbers sphere prime infinitSum sum numbers 
 	
+makedir: 
+	@mkdir -p dist
+
 binary:
 	@echo "Compiling program";
 	@g++ BinaryToDecimal.c -o dist/BinaryToDecimal.exe
