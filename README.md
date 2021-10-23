@@ -36,7 +36,7 @@ de la carrera Ingeniero en Computación UDG Cucosta.
 - [Makefile](https://www.gnu.org/software/make/)
 - [Lenguaje C](https://docs.microsoft.com/en-us/cpp/c-language/?view=msvc-160)
 
-## :white_check_mark: Requirements
+## :white_check_mark: Requerimientos
 
 Antes de empezar :checkered_flag:, debes de tener [Git](https://git-scm.com) y el compilador de c/c++ instalado
 [C/C++](https://github.com/skeeto/w64devkit)
