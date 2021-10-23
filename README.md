@@ -52,5 +52,9 @@ $ cd UDG-FundamentosProg
 
 # Para compilar los archivos c usa:
 make .
+
+# Los ejecutables se encontraran en el directorio dist
+cd dist/
+
 ```
 <a href="#top"> Regresar al inicio</a>
