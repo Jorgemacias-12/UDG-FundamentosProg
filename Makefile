@@ -1,4 +1,4 @@
-all: makedir highestNumber binary power triangle tenOddNumbers sphere prime infinitSum sum numbers 
+all: makedir highestNumber binary power triangle tenOddNumbers sphere prime infinitSum sum numbers factorial posprime vector month order week
 	
 makedir: 
 	@mkdir -p dist
@@ -33,3 +33,21 @@ sum:
 numbers:
 	@echo "Compiling program";
 	@g++ TenNumbers.c -o dist/TenNumbers.exe
+factorial:
+	@echo "Compiling program";
+	@g++ Factorial.c -o dist/Factorial.exe
+posprime:
+	@echo "Compiling program";
+	@g++ PrimePositive.c -o dist/PrimePositive.exe
+vector:
+	@echo "Compiling program";
+	@g++ VectorMax.c -o dist/VectorMax.exe
+month:
+	@echo "Compiling program";
+	@g++ MonthGain.c -o dist/MonthGain.exe
+order:
+	@echo "Compiling program";
+	@g++ Order10Numbers.c -o dist/Order10Numbers.exe
+week:
+	@echo "Compiling program";
+	@g++ WeekGain.c -o dist/WeekGain.exe
