@@ -38,7 +38,7 @@ de la carrera Ingeniero en Computación UDG Cucosta.
 
 ## :white_check_mark: Requerimientos
 
-Antes de empezar :checkered_flag:, debes de tener [Git](https://git-scm.com) y el compilador de c/c++ instalado
+Antes de empezar :checkered_flag:, debes de tener [Git](https://git-scm.com) y el compilador de instalado
 [C/C++](https://github.com/skeeto/w64devkit)
 
 ## :checkered_flag: Empezando
