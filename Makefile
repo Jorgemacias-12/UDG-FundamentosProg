@@ -1,4 +1,4 @@
-all: makedir highestNumber binary power triangle tenOddNumbers sphere prime infinitSum sum numbers factorial posprime vector month order week schedule
+all: makedir highestNumber binary power triangle tenOddNumbers sphere prime infinitSum sum numbers factorial posprime vector month order week schedule countVoCo
 	
 makedir: 
 	@mkdir -p dist
@@ -54,3 +54,6 @@ week:
 schedule:
 	@echo "Compiling program";
 	@g++ Schedule.c -o dist/Schedule.exe
+countVoCo:
+	@echo "Compiling program";
+	@g++ CountVoCo.c -o dist/CountVoCo.exe
