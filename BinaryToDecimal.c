@@ -23,7 +23,7 @@ int main(int argc, char **argv)
     puts("****************************************************************");
     
 
-    //----- FUNCION PARA REALIZAR FACTORIAL -----
+    //----- FUNCION PARA PEDIR DIGITOS Y CONVERTIR A DECIMAL -----
     printf("CONVERSOR DE BINARIO A DECIMAL DIGITO POR DIGITO\n");
     for (int counter = 0; counter <= 8; counter++)
     {       
