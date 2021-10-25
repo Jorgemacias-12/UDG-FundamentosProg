@@ -1,3 +1,4 @@
+//----- LIBRERIAS -----
 #include <stdlib.h>
 #include <stdio.h>
 #include <conio.h>
@@ -65,8 +66,22 @@ menu:
 
 int main()
 {
+    //----- VARIABLE DE REPETICIÓN -----
+    char bucle;
+    
+    //----- BUCLE DE REPETICION -----
+    do
+    {
+    //----- LLAMAR MENU -----
     setlocale(LC_ALL, "C");
     menu();
+    
+    //----- CONFIRMAR O DENEGAR VUELTA -----
+    puts("\nDESEA VOLVER A USAR EL PROGRAMA : (S/N)");
+    printf("==> ");
+    scanf("%s", &bucle);
+    system("cls");
+    } while (bucle == 's' || bucle == 'S');
     getch();
     return 0;
 }

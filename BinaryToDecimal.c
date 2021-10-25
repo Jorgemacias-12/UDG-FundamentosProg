@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     printf("VALOR DECIMAL: %d", decimalNumber);
     
     //----- CONFIRMAR O DENEGAR VUELTA -----
-    puts("\n\nDESEA CALCULAR OTRO NUMERO : (S/N)");
+    puts("\nDESEA VOLVER A USAR EL PROGRAMA : (S/N)");
     printf("==> ");
     scanf("%s", &bucle);
     system("cls");
