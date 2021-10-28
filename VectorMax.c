@@ -21,7 +21,7 @@ int main(int argc, char **argv)
         puts("****************************************************************\n");
 
         //----- VARIABLES -----
-        int vector[1000], cantidad, resultado;
+        int vector[1000], cantidad, resultado, i = 0;
 
         //----- INGRESAR LONGITUD DEL VECTOR -----
         printf("\nINGRESA LA LONGITUD DEL VECTOR");
@@ -37,7 +37,7 @@ int main(int argc, char **argv)
         }
 
         //----- RESULTADO -----
-        resultado = mayor(vector, cantidad - 1, vector[0]);
+        resultado = mayor(vector, cantidad-1,vector[0]);
         printf("\nEL NUMERO MAYOR ES : %d", resultado);
 
         //----- CONFIRMAR O DENEGAR VUELTA -----
@@ -58,9 +58,9 @@ int mayor(int vector[], int cantidad, int maximo)
         return maximo;
     }
     else if (vector[cantidad] > maximo)
-    {
-        maximo = vector[cantidad];
-        return mayor(vector, cantidad - 1, maximo);
-    }
+    maximo = vector[cantidad];
+    return mayor(vector, cantidad - 1, maximo);
     return 0;
+
+    
 }
