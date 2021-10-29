@@ -13,35 +13,40 @@ void clearScreen()
 #endif
 }
 
-void createContact()
+struct Contact
 {
-    FILE *schedule;
     char contactName[50];
     char contactAddress[50];
     char contactPhone[12];
     char contactEmail[50];
     char contactJob[50];
+} Contact;
+
+void createContact()
+{
+    FILE *schedule;
+    struct Contact contact;
     printf("| Nombre del contacto: ");
-    scanf("%s", &contactName);
+    scanf("%s[^\n]",&contact.contactName);
     printf("| Direccion del contacto: ");
-    scanf("%s", &contactAddress);
+    scanf("%s[^\n]", &contact.contactAddress, 50, stdin);
     printf("| Telefono del contacto: ");
-    scanf("%s", &contactPhone);
+    scanf("%s[^\n]", &contact.contactPhone, 12, stdin);
     printf("| Email del contacto: ");
-    scanf("%s", &contactEmail);
+    scanf("%s[^\n]", &contact.contactEmail, 50, stdin);
     printf("| Trabajo del contacto: ");
-    scanf("%s", &contactJob);
+    scanf("%s[^\n]", &contact.contactJob, 50, stdin);
     schedule = fopen("contacts.txt", "a+");
-    fprintf(schedule, "%s %s %s %s %s", contactName, contactAddress, contactPhone, contactEmail, contactJob);
+    fprintf(schedule, "%s %s %s %s %s", contact.contactName, contact.contactAddress, contact.contactPhone, contact.contactEmail, contact.contactJob);
     fprintf(schedule, "\n");
     fclose(schedule);
     printf("|---------- Contacto creado ---------|\n");
     printf("|------------- Debug ----------------|\n");
-    printf("| %s\n", contactName);
-    printf("| %s\n", contactAddress);
-    printf("| %s\n", contactPhone);
-    printf("| %s\n", contactEmail);
-    printf("| %s\n", contactJob);
+    printf("| %s\n", contact.contactName);
+    printf("| %s\n", contact.contactAddress);
+    printf("| %s\n", contact.contactPhone);
+    printf("| %s\n", contact.contactEmail);
+    printf("| %s\n", contact.contactJob);
 }
 
 void menu()
@@ -68,19 +73,19 @@ int main()
 {
     //----- VARIABLE DE REPETICIÓN -----
     char bucle;
-    
+
     //----- BUCLE DE REPETICION -----
     do
     {
-    //----- LLAMAR MENU -----
-    setlocale(LC_ALL, "C");
-    menu();
-    
-    //----- CONFIRMAR O DENEGAR VUELTA -----
-    puts("\nDESEA VOLVER A USAR EL PROGRAMA : (S/N)");
-    printf("==> ");
-    scanf("%s", &bucle);
-    system("cls");
+        //----- LLAMAR MENU -----
+        setlocale(LC_ALL, "C");
+        menu();
+
+        //----- CONFIRMAR O DENEGAR VUELTA -----
+        puts("\nDESEA VOLVER A USAR EL PROGRAMA : (S/N)");
+        printf("==> ");
+        scanf("%s", &bucle);
+        system("cls");
     } while (bucle == 's' || bucle == 'S');
     getch();
     return 0;
