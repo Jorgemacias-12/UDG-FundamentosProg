@@ -44,13 +44,13 @@ menu: //----- ENCABEZADO -----
     scanf("%d", &option);
     switch (option)
     {
-        case 0:
-            system("cls");
-            goto menu;
-        case 1:
-            break;
-        default:
-            goto menu;
+    case 0:
+        system("cls");
+        goto menu;
+    case 1:
+        break;
+    default:
+        goto menu;
     }
     system("cls");
     getch();
@@ -65,7 +65,8 @@ int mayor(int vector[], int cantidad, int maximo)
         return maximo;
     }
     else if (vector[cantidad] > maximo)
+    {
         maximo = vector[cantidad];
+    }
     return mayor(vector, cantidad - 1, maximo);
-    return 0;
 }
