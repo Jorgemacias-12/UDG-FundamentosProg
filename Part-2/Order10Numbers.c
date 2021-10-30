@@ -46,7 +46,7 @@ int main(int argc, char **argv){
     }    
 	
     //----- CONFIRMAR O DENEGAR VUELTA -----
-    puts("\n\nDESEA CALCULAR OTROS NUMEROS : (S/N)");
+    puts("\nDESEA VOLVER A USAR EL PROGRAMA : (S/N)");
     printf("==> ");
     scanf("%s", &bucle);
     system("cls");

@@ -53,3 +53,6 @@ dkms.conf
 
 # Ignore txt files
 *.txt
+
+#ignore .vscode folder
+.vscode/
